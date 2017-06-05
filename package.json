@@ -1,0 +1,8 @@
+{
+	"name": "async-directory-reading",
+	"version": "1.0.0",
+	"description": "Async Recursive Directory Reading",
+	"main": "rdr.js",
+	"author": "Cosmin Budinschi",
+	"license": "MIT"
+}
