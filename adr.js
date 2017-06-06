@@ -3,7 +3,7 @@
 const path = require('path');
 const fs = require('fs');
 
-module.exports = function rdr(dir, callback){
+module.exports = function adr(dir, callback){
 
 	let files = [], errors = []
 
