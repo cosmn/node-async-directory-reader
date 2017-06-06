@@ -1,6 +1,6 @@
 {
     "name": "async-directory-reader",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Async Recursive Directory Reader",
     "main": "adr.js",
     "author": "Cosmin Budinschi",
