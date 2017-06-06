@@ -8,10 +8,10 @@ NPM install
 
 Usage
 ```javascript
-    const adr = require('async-directory-reader')
+const adr = require('async-directory-reader')
 
-    adr('path/to/directory', function(err, file_list){
-		if (err) console.error(err)
-		console.log('Array of files:', file_list)
-	})
+adr('path/to/directory', function(err, file_list){
+	if (err) console.error(err)
+	console.log('Array of files:', file_list)
+})
 ```
