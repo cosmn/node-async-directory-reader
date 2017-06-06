@@ -1,8 +1,21 @@
 {
-	"name": "async-directory-reader",
-	"version": "1.0.0",
-	"description": "Async Recursive Directory Reader",
-	"main": "adr.js",
-	"author": "Cosmin Budinschi",
-	"license": "MIT"
+    "name": "async-directory-reader",
+    "version": "1.0.0",
+    "description": "Async Recursive Directory Reader",
+    "main": "adr.js",
+    "author": "Cosmin Budinschi",
+    "repository": "cosmn/node-async-directory-reader",
+    "keywords": [
+        "async",
+        "files",
+        "dir",
+        "directory",
+        "read",
+        "reader",
+        "reading"
+    ],
+    "engines": {
+        "node": ">= 6.10.0"
+    },
+    "license": "MIT"
 }
