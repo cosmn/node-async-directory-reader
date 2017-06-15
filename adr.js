@@ -3,7 +3,7 @@
 const { sep : path_separator, resolve : path_resolve } = require('path');
 const { readdir, lstat } = require('fs');
 
-var adr = module.exports = function adr(dir, callback){
+const adr = module.exports = function adr(dir, callback){
 
     const files = [], errors = []
 
