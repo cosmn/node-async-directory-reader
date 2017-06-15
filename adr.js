@@ -1,23 +1,23 @@
 'use strict';
 
-var path = require('path');
-var fs = require('fs');
+const { sep : path_separator } = require('path');
+const { readdir, lstat } = require('fs');
 
 var adr = module.exports = function adr(dir, callback){
 
-    var files = [], errors = []
+    const files = [], errors = []
 
-    fs.readdir( dir, function(err, paths){
+    readdir( dir, function(err, paths){
         if(err) return callback([err]);
 
-        var paths_count = paths.length
-        var paths_processed = 0
+        const paths_count = paths.length
+        let paths_processed = 0
 
         paths.forEach(function(file){
 
-            var processing_path = path.resolve(dir + path.sep + file)
+            let processing_path = path.resolve(dir + path_separator + file)
 
-            fs.lstat( processing_path, function(err, stat){
+            lstat( processing_path, function(err, stat){
                 if( err ){
                     errors.push(err)
                     paths_processed++
