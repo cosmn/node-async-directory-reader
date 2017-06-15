@@ -1,6 +1,6 @@
 'use strict';
 
-const { sep : path_separator } = require('path');
+const { sep : path_separator, resolve : path_resolve } = require('path');
 const { readdir, lstat } = require('fs');
 
 var adr = module.exports = function adr(dir, callback){
@@ -15,7 +15,7 @@ var adr = module.exports = function adr(dir, callback){
 
         paths.forEach(function(file){
 
-            let processing_path = path.resolve(dir + path_separator + file)
+            let processing_path = path_resolve(dir + path_separator + file)
 
             lstat( processing_path, function(err, stat){
                 if( err ){
